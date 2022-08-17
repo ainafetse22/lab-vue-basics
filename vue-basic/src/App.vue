@@ -1,10 +1,22 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  <div>
+    <NavBar></NavBar>
+    <router-view></router-view>
+    <FooterDiv></FooterDiv>
+  </div>
 </template>
+<script>
+import NavBar from '@/components/NavBar.vue';
+import FooterDiv from '@/components/FooterDiv.vue';
+
+export default {
+  name: 'App',
+  components: {
+    NavBar,
+    FooterDiv,
+  },
+};
+</script>
 
 <style>
 #app {
@@ -15,16 +27,4 @@
   color: #2c3e50;
 }
 
-nav {
-  padding: 30px;
-}
-
-nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-
-nav a.router-link-exact-active {
-  color: #42b983;
-}
 </style>
