@@ -1,7 +1,9 @@
 <template>
   <div class="home">
     <img alt="Vue logo" src="../assets/logo.png">
-    <FuncMsg></FuncMsg>
+    <FuncMsg>
+      <h2>This is injected from the parent</h2>
+    </FuncMsg>
     <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
   </div>
 </template>
